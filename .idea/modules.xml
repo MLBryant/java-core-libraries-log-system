@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/03/demos/carvedrockfitness_no_log/java-core-libraries-log-system.iml" filepath="$PROJECT_DIR$/03/demos/carvedrockfitness_no_log/java-core-libraries-log-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04/demos/carvedrockfitness/java-core-libraries-log-system (1).iml" filepath="$PROJECT_DIR$/04/demos/carvedrockfitness/java-core-libraries-log-system (1).iml" />
+    </modules>
+  </component>
+</project>

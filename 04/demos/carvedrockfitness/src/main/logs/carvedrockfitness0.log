@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-03-18T22:33:34.348778Z</date>
+  <millis>1616106814348</millis>
+  <nanos>778000</nanos>
+  <sequence>0</sequence>
+  <logger>order.OrderService</logger>
+  <level>SEVERE</level>
+  <class>order.OrderService</class>
+  <method>addOrder</method>
+  <thread>1</thread>
+  <message>Placing order failed, cannot order in the future. User: 10 Order: [product.Product - name: jacket, id: 10]</message>
+</record>
+<record>
+  <date>2021-03-18T22:33:34.389008Z</date>
+  <millis>1616106814389</millis>
+  <nanos>8000</nanos>
+  <sequence>1</sequence>
+  <logger>order.OrderService</logger>
+  <level>WARNING</level>
+  <class>order.OrderService</class>
+  <method>getAllOrdersByUser</method>
+  <thread>1</thread>
+  <message>Cannot get orders for a non existing user, username: null id: 0</message>
+</record>
+<record>
+  <date>2021-03-18T22:33:34.390452Z</date>
+  <millis>1616106814390</millis>
+  <nanos>452000</nanos>
+  <sequence>2</sequence>
+  <logger>order.OrderService</logger>
+  <level>INFO</level>
+  <class>order.OrderService</class>
+  <method>getAllOrders</method>
+  <thread>1</thread>
+  <message>Getting all the orders</message>
+</record>
+<record>
+  <date>2021-03-18T22:33:34.393388Z</date>
+  <millis>1616106814393</millis>
+  <nanos>388000</nanos>
+  <sequence>3</sequence>
+  <logger>order.OrderService</logger>
+  <level>WARNING</level>
+  <class>order.OrderService</class>
+  <method>deleteOrder</method>
+  <thread>1</thread>
+  <message>Can't cancel order with id: 0 because it's already cancelled</message>
+</record>
+</log>
