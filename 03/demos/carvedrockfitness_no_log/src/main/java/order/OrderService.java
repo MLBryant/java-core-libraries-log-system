@@ -3,6 +3,7 @@ package order;
 import user.User;
 import user.UserRepository;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +13,14 @@ public class OrderService {
     private OrderRepository orderRepository = new OrderRepository();
     private static final Logger LOGGER = Logger.getLogger(OrderService.class.getName());
     static {
-        ConsoleHandler consoleHandler = new ConsoleHandler();
-        LOGGER.addHandler(consoleHandler);
+        FileHandler fileHandler = null;
+        try {
+            fileHandler = new FileHandler(OrderService.class.getSimpleName() + ".log");
+            fileHandler.setFormatter(new SimpleFormatter());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        LOGGER.addHandler(fileHandler);
     }
 
     //get all logic
